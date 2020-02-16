@@ -1,0 +1,16 @@
+body {
+    margin-top: 15px;
+}
+
+.headerFormat {
+    color: white;
+}
+.question {
+    font-weight: bold;
+}
+.change {
+    margin: 0;
+    border: 5px solid grey;
+    background-color: grey;
+    grid-gap: 20px;
+}
