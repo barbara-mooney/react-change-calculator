@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './style.css';
+
 
 class App extends Component {
   constructor() {
@@ -38,7 +38,7 @@ class App extends Component {
     const tens = 1000;
     const fives = 500;
     const ones = 100;
-    const quarters = 25; 
+    const quarters = 25;
     const dimes = 10;
     const nickels = 5;
     const pennies = 1;
@@ -92,7 +92,7 @@ class App extends Component {
       remaining = changeDue % pennies;
       changeDue = remaining;
     } else {penniesDue2='0'}
-    
+
     this.setState({
       output: `${totalDue}`,
       twentiesDue: `${twentiesDue2}`,
@@ -121,27 +121,27 @@ class App extends Component {
                 </div>
                 <div className="card-body">
                   <label className="question">How much is due?</label>
-                  <input 
-                    type="number" 
-                    className="form-control" 
+                  <input
+                    type="number"
+                    className="form-control"
                     onChange={this.handleInputChange}
-                    name="amountDue" 
-                    placeholder="$0" 
+                    name="amountDue"
+                    placeholder="$0"
                      />
                   <br/>
                   <label className="question">How much was received?</label>
-                  <input 
-                    type="number" 
-                    className="form-control" 
+                  <input
+                    type="number"
+                    className="form-control"
                     onChange={this.handleInputChange}
-                    name="amountReceived" 
-                    placeholder="$0" 
+                    name="amountReceived"
+                    placeholder="$0"
                      />
                 </div>
                 <div className="card-footer text-muted">
-                  <button 
-                    type="button" 
-                    className="btn btn-primary btn-block" 
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-block calculate"
                     name="submit"
                     onClick={this.calculatePayment}>Calculate</button>
                 </div>
